@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  font-family: "League Spartan";
+}
+
+.img-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 23px;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+
+/* .gradient-text {
+  font-size: 5.5rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  max-width: 20ch;
+} */
+
+h1,
+.gradient-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -1.42857px;
+  color: #512051;
+  margin-bottom: 17px;
+}
+
+/* animated gradient text */
+.gradient-text {
+  background-image: linear-gradient(
+    90deg,
+    #512051 0%,
+    #ee69a4 25%,
+    #512051 50%,
+    #ee69a4 75%,
+    #512051 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 1000%;
+  background-position: -150%;
+  animation: animatedText 12s linear infinite;
+}
+
+@keyframes animatedText {
+  to {
+    background-position: 50%;
+  }
+}
+
+.p-hero {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.633333px;
+  color: #927b91;
+}
+
+span.rating-text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  color: #512051;
+}
+
+span.name {
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+span.author-title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 16px;
+  color: #ee69a4;
+}
+
+.p-testimonial {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.303571px;
+  color: #fff;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+.container {
+  max-width: 375px;
+  padding: 82px 24px 99px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 39px;
+}
+
+.ratings {
+  margin-bottom: 49px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #f7f2f7;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.rating:last-of-type {
+  margin-bottom: 0;
+}
+
+.stars {
+  margin-bottom: 15.23px;
+}
+
+.testimonial {
+  padding: 40px 32px 35px;
+  background: #512051;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.testimonial:last-of-type {
+  margin-bottom: 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+/* ==========
+ MEDIA QUERIES
+ ========== */
+
+@media (min-width: 1200px) {
+  /* ==========
+ TYPOGRAPHY
+ ========== */
+  h1,
+  .gradient-text {
+    font-size: 56px;
+    line-height: 48px;
+    text-align: left;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+  }
+
+  .p-hero {
+    text-align: left;
+  }
+
+  /* ==========
+   LAYOUT
+   ========== */
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 117px 165px 100px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    max-width: 1110px;
+    margin-bottom: 72px;
+  }
+
+  .hero {
+    max-width: 445px;
+    margin-bottom: 0;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 540px;
+    margin-bottom: 0;
+  }
+
+  .rating {
+    width: 445px;
+    flex-direction: row;
+    padding: 20px 32px;
+    background: #f7f2f7;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  .rating:hover {
+    filter: saturate(3);
+    transform: translateX(-48px);
+  }
+
+  .rating-2 {
+    margin-left: 48px;
+  }
+
+  .rating-3 {
+    margin-left: 95px;
+    margin-bottom: 0;
+  }
+
+  .stars {
+    margin: 0 32.45px 0 0;
+  }
+
+  .testimonials {
+    justify-content: space-between;
+    max-width: 1110px;
+    height: 266px;
+  }
+
+  .testimonial {
+    padding: 40px 32px 35px;
+    background: #512051;
+    border-radius: 8px;
+    margin-bottom: 0;
+    align-self: flex-start;
+    max-width: 350px;
+    cursor: default;
+  }
+
+  .testimonial:hover {
+    transform: translateY(-20px);
+    transition: ease-in-out 0.3s;
+  }
+
+  .testimonial-2 {
+    align-self: center;
+  }
+
+  .testimonial-3 {
+    align-self: flex-end;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+}
