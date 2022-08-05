@@ -8,8 +8,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/social-proof-section-Fc90zTXk5i)
-- Live Site URL: [Add live site URL here](https://melodious-biscuit-1eecf3.netlify.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-Fc90zTXk5i]
+- Live Site URL: [https://melodious-biscuit-1eecf3.netlify.app/]
 
 ## My process
 
